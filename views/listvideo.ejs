@@ -39,7 +39,7 @@
                                 <% if(data != undefined){ %>
                                     <% if(data.length > 0){ %>
                                         <% _.each(data, function(v, k) {%>
-                                            <a href="<%= v.url %>" class="list-group-item" download>
+                                            <a href="<%= v.url %>" class="list-group-item" download="<%= v.url %>">
                                                 <h4 class="list-group-item-heading">Resulation: <%= v.format_note %></h4>
                                                 <p class="list-group-item-text">Ext: <%= v.ext %> | Size: <%= v.filesize %></p>
                                             </a>
