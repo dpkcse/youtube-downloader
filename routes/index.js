@@ -31,7 +31,7 @@ router.post('/video', function(req, res, next) {
     }else{
       res_data.error = 'NA';
       info.formats.forEach(function(item) {
-          if(item.format_note !== 'DASH audio' && item.filesize) {
+          if(item.filesize) {
               item.filesize = item.filesize ? bytesToSize(item.filesize): 'unknown';
               formats.push(item);
           }
